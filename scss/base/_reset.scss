@@ -1,3 +1,7 @@
+:root {
+  --input-margin: 15px;
+}
+
 *,
 *::before,
 *::after {
@@ -7,9 +11,10 @@
 }
 
 html {
-  // overflow: hidden;
+  overflow-x: hidden;
 
   body {
+    position: relative;
     overflow-x: hidden;
   }
 }

@@ -5,13 +5,18 @@
     display: flex;
     flex-direction: column;
 
+    @include screen('tablet') {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
     .form__label {
       display: none;
     }
 
     .contact__input,
     .contact__textarea {
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       padding: 10px 0;
       border: none;
       font-family: 'Raleway', sans-serif;
@@ -21,6 +26,18 @@
 
     .contact__input {
       border-bottom: $form-border;
+
+      @include screen('tablet') {
+        flex-basis: 50%;
+      }
+    }
+
+    .name__input {
+      margin-right: var(--input-margin);
+
+      @include screen('tablet') {
+        flex-basis: calc(50% - var(--input-margin));
+      }
     }
 
     .contact__textarea {
@@ -29,10 +46,14 @@
       background-color: $primary-background-color;
       border: $form-border;
       resize: none;
+
+      @include screen('tablet') {
+        flex-basis: 100%;
+      }
     }
 
     .primary-button {
-      width: 100%;
+      width: 356px;
     }
   }
 }

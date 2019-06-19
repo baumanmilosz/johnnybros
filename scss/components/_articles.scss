@@ -1,6 +1,4 @@
   .wrapper {
-    background-color: $primary-background-color;
-
     .article {
       position: relative;
       display: flex;
@@ -11,13 +9,11 @@
       box-shadow: $box-shadow;
       z-index: 100;
 
-      .article__title {
-        margin-bottom: 10px;
+      @include screen('tablet') {
+        padding: 45px 30px;
       }
 
-      .article__subtitle {
-        margin-bottom: 55px;
-      }
+
 
       .article__paragraph {
         margin-bottom: 25px;
@@ -27,6 +23,11 @@
       .primary-button {
         width: 272px;
         align-self: center;
+
+        @include screen('tablet') {
+          width: 320px;
+          align-self: flex-start;
+        }
       }
     }
   }

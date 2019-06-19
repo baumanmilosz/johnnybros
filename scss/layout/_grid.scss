@@ -3,3 +3,12 @@
   @include margin-auto;
   overflow-x: hidden;
 }
+
+.components-wrapper {
+  @include screen('tablet') {
+    position: relative;
+    width: 728px;
+    height: 794px;
+    @include margin-auto;
+  }
+}
