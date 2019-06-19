@@ -11,12 +11,14 @@
 @import 'layout/header';
 @import 'layout/sections';
 @import 'layout/footer';
-@import 'layout/form';
+@import 'layout/forms';
 
+@import 'components/articles';
 @import 'components/buttons';
-@import 'components/inputs';
+@import 'components/boxes';
+@import 'components/headings';
 @import 'components/dropdown';
 
 @import 'pages/home';
 
-@import 'themes/theme'
+@import 'themes/theme';

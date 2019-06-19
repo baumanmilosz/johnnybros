@@ -1,0 +1,60 @@
+.header {
+  background: url('../../assets/images/pp-main-background.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 568px;
+
+  .wrapper {
+    background-color: transparent;
+
+    .article {
+      position: initial;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      text-align: center;
+      background-color: transparent;
+      box-shadow: none;
+      z-index: 0;
+
+      .article__title {
+        margin-bottom: 20px;
+        color: $primary-background-color;
+      }
+
+      .article__subtitle {
+        font-size: $h1-fs-mobile;
+        line-height: $h1-lh-mobile;
+        margin-bottom: 55px;
+        color: $primary-background-color;
+
+
+        .article__subtitle--hidden {
+          display: none;
+          color: $primary-background-color;
+        }
+      }
+
+      .article__paragraph {
+        margin-bottom: 25px;
+        // font-weight: $medium;
+        color: $primary-background-color;
+      }
+
+      .arrow-circle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        @include margin-auto;
+        margin-top: 30px;
+        border-radius: 50%;
+        border: 2px solid rgba(255, 255, 255, 0.7);
+
+        .arrow-icon {
+          @include position;
+          color: $primary-background-color;
+        }
+      }
+    }
+  }
+}

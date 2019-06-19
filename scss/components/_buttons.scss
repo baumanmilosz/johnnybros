@@ -1,0 +1,11 @@
+.primary-button {
+  width: 240px;
+  height: $primary-button-height;
+  background-color: $primary-color;
+  color: $secondary-background-color;
+  font-family: 'Raleway', sans-serif;
+  font-weight: $bold;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+}

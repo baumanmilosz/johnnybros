@@ -1,0 +1,39 @@
+.nav-bar.opened {
+  .inner-hamburger {
+    transform: rotate(90deg);
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      top: 1px;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.nav-bar.opened+.nav {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 100vw;
+  height: 100vh;
+  background-color: $secondary-color;
+  z-index: 400;
+
+  &::before {
+    @include psel;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}

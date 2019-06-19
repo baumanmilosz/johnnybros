@@ -1,0 +1,5 @@
+.wrapper {
+  max-width: $wrapper-width;
+  @include margin-auto;
+  overflow-x: hidden;
+}

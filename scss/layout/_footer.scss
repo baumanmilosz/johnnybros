@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 86px;
+  background-color: $secondary-color;
+
+  .footer__paragraph {
+    font-family: 'Raleway', sans-serif;
+    font-size: $h5-fs-mobile;
+    font-weight: $medium;
+    color: $secondary-background-color;
+  }
+}

@@ -7,7 +7,7 @@ $subtitle-color: rgba(0, 0, 0, 0.8);
 $primary-background-color: #f5f5f5;
 $secondary-background-color: #fff;
 
-$form-border: 1px solid rgba(255, 255, 255, 0.24);
+$form-border: 1px solid rgba(0, 0, 0, 0.24);
 $box-shadow: 0 3px 6px rgba(0, 0, 0, .18);
 
 $primary-button-width: 320px;
@@ -20,11 +20,13 @@ $primary-button-lh-desktop: 19px;
 
 $wrapper-width: 1200px;
 
+$regular: 400;
+$medium: 500;
+$bold: 700;
 
-/**
-  * fs - font-size
-  * ls - line-height
-*/
+
+// fs - font-size
+// ls - line-height
 
 // MOBILE
 $h1-fs-mobile: 38px;

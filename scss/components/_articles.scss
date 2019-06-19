@@ -1,0 +1,32 @@
+  .wrapper {
+    background-color: $primary-background-color;
+
+    .article {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin: 50px 10px 0;
+      padding: 30px 15px;
+      background-color: #fff;
+      box-shadow: $box-shadow;
+      z-index: 100;
+
+      .article__title {
+        margin-bottom: 10px;
+      }
+
+      .article__subtitle {
+        margin-bottom: 55px;
+      }
+
+      .article__paragraph {
+        margin-bottom: 25px;
+        font-weight: $regular;
+      }
+
+      .primary-button {
+        width: 272px;
+        align-self: center;
+      }
+    }
+  }

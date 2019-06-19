@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Raleway';
+  src:
+    url("../../assets/fonts/Raleway/Raleway-Regular.ttf") format('truetype'),
+    url("../../assets/fonts/Raleway/Raleway-Medium.ttf") format('truetype'),
+    url("../../assets/fonts/Raleway/Raleway-Bold.ttf") format('truetype'),
+}
+
+@font-face {
+  font-family: 'Millunium';
+  src:
+    url("../../assets/fonts/Millunium/Millunium-Medium.ttf") format('truetype'),
+    url("../../assets/fonts/Millunium/Millunium-Medium.woff") format('wolff'),
+    url("../../assets/fonts/Millunium/Millunium-Medium.woff2") format('wolff2'),
+    url("../../assets/fonts/Millunium/Millunium-Medium.eot") format('eot');
+}
+
+html {
+  font-size: 62.5%;
+
+  body {
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+
+    .article__title {
+      font-family: 'Raleway',
+        sans-serif;
+      font-size: $h4-fs-mobile;
+      font-weight: $bold;
+      line-height: $h4-lh-mobile;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .article__subtitle {
+      font-weight: $medium;
+      font-size: $h3-fs-mobile;
+      line-height: $h3-lh-mobile;
+    }
+
+    .article__paragraph {
+      font-weight: $medium;
+      font-size: $p-fs-mobile;
+      line-height: $p-lh-mobile;
+    }
+  }
+}
