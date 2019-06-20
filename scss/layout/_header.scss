@@ -17,6 +17,11 @@
       box-shadow: none;
       z-index: 0;
 
+      @include screen('tablet') {
+        padding: 0;
+        margin-top: 50px;
+      }
+
       .article__title {
         margin-bottom: 20px;
         color: $primary-background-color;
@@ -36,6 +41,7 @@
         @include screen('tablet') {
           font-size: $h1-fs-desktop;
           line-height: $h1-lh-desktop;
+          margin-bottom: 20px;
         }
 
 
@@ -55,7 +61,11 @@
         color: $primary-background-color;
 
         @include screen('tablet') {
-          margin: 0 50px 25px;
+          width: 640px;
+          @include margin-auto;
+          margin-bottom: 25px;
+          font-size: $p-fs-desktop;
+          line-height: $p-lh-desktop;
         }
       }
 
@@ -65,6 +75,10 @@
 
         @include screen('tablet') {
           width: 320px;
+        }
+
+        @include screen('desktop') {
+          margin: 20px 0;
         }
       }
 

@@ -57,29 +57,29 @@
   $desktop: "(min-width: 1366px)";
   $x-large: "(min-width: 1440px)";
 
-  @if $size==x-small {
-    @media only screen and #{$x-small} {
-      @content;
-    }
-  }
+  // @if $size==x-small {
+  //   @media only screen and #{$x-small} {
+  //     @content;
+  //   }
+  // }
 
-  @else if $size==small {
-    @media only screen and #{$small} {
-      @content;
-    }
-  }
+  // @else if $size==small {
+  //   @media only screen and #{$small} {
+  //     @content;
+  //   }
+  // }
 
-  @else if $size==tablet {
+  @if $size==tablet {
     @media only screen and #{$tablet} {
       @content;
     }
   }
 
-  @else if $size=medium-l {
-    @media only screen and #{$medium-l} {
-      @content;
-    }
-  }
+  // @else if $size=medium-l {
+  //   @media only screen and #{$medium-l} {
+  //     @content;
+  //   }
+  // }
 
   @else if $size=desktop {
     @media only screen and #{$desktop} {
@@ -87,15 +87,15 @@
     }
   }
 
-  @else if $size=x-large {
-    @media only screen and #{$x-large} {
-      @content;
-    }
-  }
+  // @else if $size=x-large {
+  //   @media only screen and #{$x-large} {
+  //     @content;
+  //   }
+  // }
 
-  @else {
-    @media only screen and #{$size} {
-      @content;
-    }
-  }
+  // @else {
+  //   @media only screen and #{$size} {
+  //     @content;
+  //   }
+  // }
 }

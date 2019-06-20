@@ -1,45 +1,45 @@
- .stats__paragraph {
-   color: #fff;
- }
+.box {
+  width: 180px;
+  margin: 20px auto;
 
- .box {
-   width: 180px;
-   margin: 20px auto;
+  @include screen('tablet') {
+    margin: 0 0 50px 0;
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-   @include screen('tablet') {
-     margin: 0 0 50px 0;
-     flex-basis: 33%;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     align-items: center;
-   }
+  @include screen('desktop') {
+    flex-basis: auto;
+  }
 
-   .box__number {
-     margin-bottom: 10px;
-     font-family: 'Millunium', sans-serif;
-     font-size: 36px;
-     font-weight: $medium;
-     color: rgba(0, 0, 0, 0.4);
+  .box__number {
+    margin-bottom: 10px;
+    font-family: 'Millunium', sans-serif;
+    font-size: 36px;
+    font-weight: $medium;
+    color: rgba(0, 0, 0, 0.4);
 
-     &--active {
-       color: $primary-color;
-     }
-   }
+    &--active {
+      color: $primary-color;
+    }
+  }
 
-   .box__img-wrapper {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-bottom: 10px;
+  .box__img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 
-     .box__img {}
-   }
+    .box__img {}
+  }
 
-   .box__paragraph {
-     margin: 0 20px;
-     font-size: $primary-button-fs-mobile;
-     line-height: $primary-button-lh-mobile;
-     font-weight: $bold;
-   }
- }
+  .box__paragraph {
+    margin: 0 20px;
+    font-size: $primary-button-fs-mobile;
+    line-height: $primary-button-lh-mobile;
+    font-weight: $bold;
+  }
+}

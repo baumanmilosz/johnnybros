@@ -20,7 +20,11 @@
   padding: 20px 10px;
   background: none;
   border: none;
-  z-index: 500;
+  z-index: 600;
+
+  @include screen('desktop') {
+    display: none;
+  }
 
   .inner-hamburger {
     position: relative;

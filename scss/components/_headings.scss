@@ -12,6 +12,10 @@
   @include screen('tablet') {
     margin-bottom: 15px;
   }
+
+  @include screen('desktop') {
+    margin-bottom: 30px;
+  }
 }
 
 .article__paragraph {

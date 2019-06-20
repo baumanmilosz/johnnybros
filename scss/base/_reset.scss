@@ -1,5 +1,6 @@
 :root {
   --input-margin: 15px;
+  --nav-bar-height: 64px;
 }
 
 *,
@@ -13,8 +14,13 @@
 html {
   overflow-x: hidden;
 
+  &.scroll-disabled {
+    overflow-y: hidden;
+  }
+
   body {
     position: relative;
     overflow-x: hidden;
+
   }
 }

@@ -19,34 +19,36 @@
         <h1 class="nav-bar__title">
           <a href="./index.html" class="nav-bar__link">
             <div class="nav-bar__logo">
-              <img class="logo" src="./assets/images/jb-logo-mobile.svg" alt="Logo firmy JohnnyBros">
+              <img class="logo-mobile" src="./assets/images/jb-logo-mobile.svg" alt="Logo firmy JohnnyBros">
+              <img class="logo-desktop" src="./assets/images/jb-logo.svg" alt="Logo firmy JohnnyBros">
             </div>
           </a>
         </h1>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--active">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">O turnieju</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Nagrody</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Jak dołączyć</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
         <button class="hamburger">
           <div class="inner-hamburger">
           </div>
         </button>
       </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item nav__item--active">
-            <a href="#" class="nav__link">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">O turnieju</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Nagrody</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Jak dołączyć</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
+
       <article class="article">
         <h2 class="article__title">Turniej piłkarzyków</h2>
         <h3 class="article__subtitle">Party Parrot <span class="article__subtitle--hidden">Tournament</span></h3>
@@ -79,9 +81,11 @@
         </div>
         <section class="stats">
           <h3 class="stats__title article__title">Dzienne statystki</h3>
-          <p class="stats__paragraph"><span class="stats__number">90</span>Rozegranych meczów</p>
-          <p class="stats__paragraph"><span class="stats__number">1530</span>Strzelonych bramek</p>
-          <p class="stats__paragraph"><span class="stats__number">3</span>Litry potu</p>
+          <div class="stats-wrapper">
+            <p class="stats__paragraph"><span class="stats__number">90</span>Rozegranych meczów</p>
+            <p class="stats__paragraph"><span class="stats__number">1530</span>Strzelonych bramek</p>
+            <p class="stats__paragraph"><span class="stats__number">3</span>Litry potu</p>
+          </div>
         </section>
       </div>
     </div>

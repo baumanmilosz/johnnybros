@@ -11,4 +11,9 @@
     height: 794px;
     @include margin-auto;
   }
+
+  @include screen('desktop') {
+    width: 1200px;
+    height: 645px;
+  }
 }
