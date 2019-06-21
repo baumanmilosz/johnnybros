@@ -13,7 +13,7 @@ I used a few transition effects which in my opinion are in main style of page. F
 - Browsersync
 
 ## Setup
-Link to demo: https://baumanmilosz.ggithub.io/johnnybros/.
+Link to demo: https://baumanmilosz.github.io/johnnybros/.
 
 ## Status
 Project is: *finished*
