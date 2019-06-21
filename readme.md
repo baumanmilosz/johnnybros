@@ -5,10 +5,6 @@ I used a few transition effects which in my opinion are in main style of page. F
 ## Screenshots
 [<img width="100%" src="https://github.com/baumanmilosz/trial/blob/master/desktop.png">](https://github.com/baumanmilosz/trial/blob/master/desktop.png?raw=true)
 
-[<img width="100%" src="https://github.com/baumanmilosz/trial/blob/master/tablet.png">](https://github.com/baumanmilosz/trial/blob/master/tablet.png?raw=true)
-
-[<img width="100%" src="https://github.com/baumanmilosz/trial/blob/master/mobile.png">](https://github.com/baumanmilosz/trial/blob/master/mobile.png?raw=true)
-
 ## Technologies
 - HTML5
 - CSS3 (SASS - 7-1 pattern)
@@ -18,7 +14,6 @@ I used a few transition effects which in my opinion are in main style of page. F
 
 ## Setup
 Link to demo: https://baumanmilosz.ggithub.io/johnnybros/.
-
 
 ## Status
 Project is: *finished*
