@@ -1,3 +1,5 @@
+// DROPDOWN MENU
+
 const hamburgerBtn = document.querySelector('.hamburger');
 const navBar = document.querySelector('.nav-bar');
 
@@ -11,17 +13,21 @@ hamburgerBtn.addEventListener('click', () => {
     document.documentElement.classList.remove('layer');
   }
 })
+//
 
+// NAV-BAR FIXED
 const header = document.querySelector('.header');
 const headerHeight = 568;
 window.addEventListener('scroll', () => {
-  if (document.documentElement.scrollTop > headerHeight && window.innerWidth < 1366) {
+  if (document.documentElement.scrollTop > headerHeight && window.innerWidth <= 1366) {
     navBar.classList.add('nav-bar--fixed');
   } else {
     navBar.classList.remove('nav-bar--fixed');
   }
 })
+//
 
+// DISABLE DROPDOWN MENU WHILE RESIZE TO DESKTOP WIDTH;
 const desktop = window.matchMedia("(min-width: 1366px)");
 const checkDesktop = (e) => {
   if (e.matches) {
@@ -32,3 +38,4 @@ const checkDesktop = (e) => {
   }
 }
 desktop.addListener(checkDesktop);
+//

@@ -1,11 +1,16 @@
     .nav-bar {
       width: 100%;
       height: var(--nav-bar-height);
-      padding: 10px 15px;
+      padding: 0 15px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       background-color: transparent;
+      transition: background-color .3s linear;
+
+      @include screen('tablet') {
+        height: 62px;
+      }
 
       &--fixed {
         position: fixed;
@@ -13,8 +18,12 @@
         left: 0;
         background-color: $secondary-color;
         z-index: 500;
-        transition: background-color .3s linear;
+
         box-shadow: $bar-shadow;
+
+        @include screen('tablet') {
+          height: var(--nav-bar-height);
+        }
       }
 
 
@@ -49,7 +58,6 @@
     }
 
     .nav {
-      // display: none;
       position: absolute;
       top: 0;
       right: auto;
@@ -61,7 +69,6 @@
       transition: transform .3s ease;
 
       @include screen('desktop') {
-        display: block;
         position: initial;
         top: auto;
         right: auto;
@@ -109,29 +116,25 @@
 
           .nav__link {
             position: relative;
+            display: block;
             margin-left: 50px;
             text-decoration: none;
             color: $secondary-background-color;
 
             @include screen('desktop') {
-              &:hover::before {
+              overflow: hidden;
+
+              &::before {
                 @include psel();
-                @include position((absolute, 50%, 0, translate(-50%, 0)));
-                width: 0;
+                @include position(absolute, 50%, -100%, translate(0, -50%));
+                width: 100%;
                 height: 4px;
                 background-color: $primary-color;
-                animation: line .2s linear both;
+                transition: transform 0.4s ease;
+              }
 
-                @include keyframes(line) {
-                  from {
-                    width: 0;
-                  }
-
-                  to {
-                    width: 100%;
-                  }
-                }
-
+              &:hover::before {
+                transform: translate(100%, -50%);
               }
             }
           }
