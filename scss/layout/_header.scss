@@ -15,7 +15,7 @@
       text-align: center;
       background-color: transparent;
       box-shadow: none;
-      z-index: 0;
+      overflow: hidden;
 
       @include screen('tablet') {
         padding: 0;
