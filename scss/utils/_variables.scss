@@ -8,8 +8,10 @@ $primary-background-color: #f5f5f5;
 $secondary-background-color: #fff;
 
 $form-border: 1px solid rgba(0, 0, 0, 0.24);
+
 $box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
 $bar-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+
 $primary-button-width: 320px;
 $primary-button-height: 48px;
 
@@ -21,6 +23,7 @@ $primary-button-lh-desktop: 19px;
 
 $wrapper-width: 1200px;
 
+// FONT WEIGHT
 $regular: 400;
 $medium: 500;
 $bold: 700;
@@ -30,20 +33,20 @@ $bold: 700;
 // ls - line-height
 
 // MOBILE
-$h1-fs-mobile: 38px;
-$h1-lh-mobile: 38px;
+$header-subtitle-fs-mobile: 38px;
+$header-subtitle-lh-mobile: 38px;
 
-$h2-fs-mobile: 32px; //36
-$h2-lh-mobile: 38px;
+$stats-fs-mobile: 36px;
+$stats-lh-mobile: 38px;
 
-$h3-fs-mobile: 24px;
-$h3-lh-mobile: 28px;
+$subtitle-fs-mobile: 24px;
+$subtitle-lh-mobile: 28px;
 
-$h4-fs-mobile: 15px;
-$h4-lh-mobile: 20px;
+$title-fs-mobile: 15px;
+$title-lh-mobile: 20px;
 
-$h5-fs-mobile: 15px;
-$h5-lh-mobile: 16px;
+$p-secondary-fs-mobile: 15px;
+$p-secondary-lh-mobile: 16px;
 
 $p-fs-mobile: 14px;
 $p-lh-mobile: 22px;
@@ -54,20 +57,20 @@ $primary-button-lh-mobile: 18px;
 
 
 // DESKTOP
-$h1-fs-desktop: 64px;
-$h1-lh-desktop: 64px;
+$header-subtitle-fs-desktop: 64px;
+$header-subtitle-lh-desktop: 64px;
 
-$h2-fs-desktop: 48px;
-$h2-lh-desktop: 56px;
+$stats-fs-desktop: 48px;
+$stats-lh-desktop: 56px;
 
-$h3-fs-desktop: 32px;
-$h3-lh-desktop: 38px;
+$subtitle-fs-desktop: 32px;
+$subtitle-lh-desktop: 38px;
 
-$h4-fs-desktop: 18px;
-$h4-lh-desktop: 20px;
+$title-fs-desktop: 18px;
+$title-lh-desktop: 20px;
 
-$h5-fs-desktop: 16px;
-$h5-lh-desktop: 18px;
+$p-secondary-fs-desktop: 16px;
+$p-secondary-lh-desktop: 18px;
 
 $p-fs-desktop: 15px;
 $p-lh-desktop: 24px;

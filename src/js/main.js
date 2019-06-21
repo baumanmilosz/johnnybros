@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
 })
 //
 
-// DISABLE DROPDOWN MENU WHILE RESIZE TO DESKTOP WIDTH;
+// DISABLE DROPDOWN MENU WHILE RESIZE WINDOW;
 const desktop = window.matchMedia("(min-width: 1366px)");
 const checkDesktop = (e) => {
   if (e.matches) {

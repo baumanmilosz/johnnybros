@@ -35,7 +35,6 @@
       margin-top: -20px;
       background: url('../../assets/images/pp-foosball-match.jpg') no-repeat;
       background-size: cover;
-      // background-position-x: -80px;
       overflow-x: hidden;
 
       @include screen('tablet') {
@@ -107,8 +106,8 @@
             flex-grow: 1;
             width: 120px;
             @include margin-auto;
-            font-size: $h5-fs-desktop;
-            line-height: $h5-lh-desktop;
+            font-size: $p-secondary-fs-desktop;
+            line-height: $p-secondary-lh-desktop;
           }
 
           .stats__number {
@@ -124,7 +123,7 @@
 
 
             @include screen('tablet') {
-              font-size: $h2-fs-desktop;
+              font-size: $stats-fs-desktop;
             }
           }
         }
@@ -140,17 +139,16 @@
 
   @include screen('tablet') {
     padding: 200px 0 50px 0;
-    // margin-top: -200px;
-    // position: relative;
-    // top: -200px;
-    z-index: 0;
   }
 
   .wrapper {
     background-color: #fff;
 
     .article__subtitle {
-      margin: 0 130px;
+      @include screen('tablet') {
+        width: 500px;
+        @include margin-auto;
+      }
     }
 
     .boxes {
@@ -264,7 +262,7 @@
           display: flex;
           align-items: center;
 
-          .review__photo-wrapper {
+          .review__photo {
             position: relative;
             width: 48px;
             height: 48px;
@@ -273,15 +271,15 @@
             border-radius: 50%;
             overflow: hidden;
 
-            .review__photo {
+            .photo {
               width: 48px;
               height: 48px;
             }
           }
 
           .review__name {
-            font-size: $h4-fs-mobile;
-            line-height: $h4-lh-mobile;
+            font-size: $title-fs-mobile;
+            line-height: $title-lh-mobile;
             font-weight: $bold;
 
             .review__position {

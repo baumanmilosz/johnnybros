@@ -27,20 +27,20 @@
         color: $primary-background-color;
 
         @include screen('tablet') {
-          font-size: $h4-fs-desktop;
+          font-size: $title-fs-desktop;
           line-height: 22px;
         }
       }
 
       .article__subtitle {
-        font-size: $h1-fs-mobile;
-        line-height: $h1-lh-mobile;
+        font-size: $header-subtitle-fs-mobile;
+        line-height: $header-subtitle-lh-mobile;
         margin-bottom: 55px;
         color: $primary-background-color;
 
         @include screen('tablet') {
-          font-size: $h1-fs-desktop;
-          line-height: $h1-lh-desktop;
+          font-size: $header-subtitle-fs-desktop;
+          line-height: $header-subtitle-lh-desktop;
           margin-bottom: 20px;
         }
 

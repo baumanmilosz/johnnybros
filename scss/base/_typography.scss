@@ -8,8 +8,7 @@
 
 @font-face {
   font-family: 'Millunium';
-  src:
-    url("../../assets/fonts/Millunium/Millunium-Medium.ttf") format('truetype'),
+  src: url("../../assets/fonts/Millunium/Millunium-Medium.ttf") format('truetype'),
     url("../../assets/fonts/Millunium/Millunium-Medium.woff") format('wolff'),
     url("../../assets/fonts/Millunium/Millunium-Medium.woff2") format('wolff2'),
     url("../../assets/fonts/Millunium/Millunium-Medium.eot") format('eot');
@@ -26,15 +25,15 @@ html {
     .section__title {
       font-family: 'Raleway',
         sans-serif;
-      font-size: $h4-fs-mobile;
+      font-size: $title-fs-mobile;
       font-weight: $bold;
-      line-height: $h4-lh-mobile;
+      line-height: $title-lh-mobile;
       text-transform: uppercase;
       letter-spacing: 3px;
 
       @include screen('tablet') {
-        font-size: $h4-fs-desktop;
-        line-height: $h4-lh-desktop;
+        font-size: $title-fs-desktop;
+        line-height: $title-lh-desktop;
       }
     }
 
@@ -42,13 +41,13 @@ html {
     .section__subtitle {
       font-family: 'Millunium',
         sans-serif;
-      font-size: $h3-fs-mobile;
-      line-height: $h3-lh-mobile;
+      font-size: $subtitle-fs-mobile;
+      line-height: $subtitle-lh-mobile;
       font-weight: $medium;
 
       @include screen('tablet') {
-        font-size: $h3-fs-desktop;
-        line-height: $h3-lh-desktop;
+        font-size: $subtitle-fs-desktop;
+        line-height: $subtitle-lh-desktop;
       }
     }
 
