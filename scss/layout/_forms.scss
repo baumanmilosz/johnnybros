@@ -33,9 +33,8 @@
     }
 
     .name__input {
-      margin-right: var(--input-margin);
-
       @include screen('tablet') {
+        margin-right: var(--input-margin);
         flex-basis: calc(50% - var(--input-margin));
       }
     }
@@ -53,7 +52,13 @@
     }
 
     .primary-button {
-      width: 356px;
+      @include screen('tablet') {
+        width: 356px;
+      }
+
+      @include screen('desktop') {
+        width: 320px;
+      }
     }
   }
 }

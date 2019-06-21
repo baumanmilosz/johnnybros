@@ -18,6 +18,10 @@
     line-height: $primary-button-lh-desktop;
   }
 
+  @include screen('desktop') {
+    width: 320px;
+  }
+
   &::before {
     @include psel();
     top: 0;
