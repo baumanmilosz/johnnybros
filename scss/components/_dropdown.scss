@@ -1,5 +1,4 @@
 .nav-bar.opened {
-
   .inner-hamburger {
     transform: rotate(90deg);
     background-color: transparent;
@@ -17,25 +16,11 @@
       transform: rotate(45deg);
     }
   }
-}
 
-.nav-bar.opened .nav {
-  display: block;
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  left: 50px;
-  width: 100%;
-  background-color: $secondary-color;
-  z-index: 600;
-
-
-  &::before {
-    @include psel;
-    top: 0;
-    left: -50px;
-    width: 50px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+  & .nav {
+    display: block;
+    right: 0;
+    transform: translateX(0);
+    transition: transform .3s ease;
   }
 }

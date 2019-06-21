@@ -49,10 +49,27 @@
     }
 
     .nav {
-      display: none;
+      // display: none;
+      position: absolute;
+      top: 0;
+      right: auto;
+      height: 100vh;
+      width: 90%;
+      background-color: $secondary-color;
+      z-index: 600;
+      transform: translateX(120%);
+      transition: transform .3s ease;
 
       @include screen('desktop') {
         display: block;
+        position: initial;
+        top: auto;
+        right: auto;
+        height: initial;
+        width: initial;
+        transform: initial;
+        background-color: initial;
+        z-index: initial;
       }
 
       .nav__list {

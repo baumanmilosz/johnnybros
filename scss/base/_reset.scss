@@ -12,10 +12,23 @@
 }
 
 html {
+  position: relative;
   overflow-x: hidden;
 
   &.scroll-disabled {
     overflow-y: hidden;
+  }
+
+  &.layer {
+    &::before {
+      @include psel();
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 200;
+    }
   }
 
   body {

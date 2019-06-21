@@ -73,6 +73,7 @@
         width: 240px;
         align-self: center;
 
+
         @include screen('tablet') {
           width: 320px;
         }

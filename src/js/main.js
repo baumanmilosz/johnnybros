@@ -5,8 +5,10 @@ hamburgerBtn.addEventListener('click', () => {
   navBar.classList.toggle('opened');
   if (navBar.classList.contains('opened')) {
     document.documentElement.classList.add('scroll-disabled');
+    document.documentElement.classList.add('layer');
   } else {
     document.documentElement.classList.remove('scroll-disabled');
+    document.documentElement.classList.remove('layer');
   }
 })
 
@@ -26,6 +28,7 @@ const checkDesktop = (e) => {
     navBar.classList.remove('opened');
     navBar.classList.remove('nav-bar--fixed');
     document.documentElement.classList.remove('scroll-disabled');
+    document.documentElement.classList.remove('layer');
   }
 }
 desktop.addListener(checkDesktop);
