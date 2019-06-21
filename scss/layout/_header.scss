@@ -6,6 +6,7 @@
 
   .wrapper {
     background-color: transparent;
+    overflow: hidden;
 
     .article {
       margin: 20px 0 0 0;
@@ -15,7 +16,7 @@
       text-align: center;
       background-color: transparent;
       box-shadow: none;
-      overflow: hidden;
+
 
       @include screen('tablet') {
         padding: 0;
