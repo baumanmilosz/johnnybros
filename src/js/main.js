@@ -19,7 +19,7 @@ hamburgerBtn.addEventListener('click', () => {
 const header = document.querySelector('.header');
 const headerHeight = 568;
 window.addEventListener('scroll', () => {
-  if (document.documentElement.scrollTop > headerHeight && window.innerWidth <= 1366) {
+  if (document.documentElement.scrollTop > headerHeight && window.innerWidth < 1366) {
     navBar.classList.add('nav-bar--fixed');
   } else {
     navBar.classList.remove('nav-bar--fixed');
